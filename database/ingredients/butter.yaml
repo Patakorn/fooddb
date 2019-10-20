@@ -1,0 +1,8 @@
+name:
+  en: Butter
+  fr: Beurre
+image: butter.jpg
+categories:
+- dairy
+units:
+- g

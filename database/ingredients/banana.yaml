@@ -1,0 +1,9 @@
+name:
+  en: Banana
+  fr: Banane
+image: banana.jpg
+categories:
+- fruits
+units:
+- each
+- g
