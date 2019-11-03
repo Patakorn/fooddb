@@ -33,50 +33,60 @@ const TypeScriptTemplate string = `
     {{- end }}
   {{- end }}
 {{- end }}
+
+// Category images
 {{ template "imagePath" .Categories }}
+
+// Ingredient images
 {{ template "imagePath" .Ingredients }}
 
-type Languages = "en" | "fr"
+export const Languages = ["en", "fr"] as const
+export type Language = typeof Languages[number]
+
+export const Units = ["g", "Kg", "mL", "cL", "L", "each"] as const
+export type Unit = typeof Units[number]
 
 export type IngredientCategory = {
-  name: Partial<Record<Languages, string>>
-  image?: string
+  id: string
+  name: Partial<Record<Language, string>>
+  img?: string
 }
-
-type Units = "g" | "Kg" | "L" | "each"
 
 export type Ingredient = {
-  name: Record<Languages, string>
-  image?: string
+  id: string
+  name: Record<Language, string>
+  img?: string
   categories: string[]
-  units: Units[]
+  units: Unit[]
 }
 
-export const IngredientCategoryCatalog: Record<string, IngredientCategory> = {
+const categoryCatalog: Record<string, IngredientCategory> = {
 {{- range $catName, $cat := .Categories }}
   {{ $catName }}: {
+    id: "{{ $catName }}",
     name: {
     {{- range $k, $v := $cat.Name }}
       {{ $k }}: "{{ $v }}",
     {{- end }}
     },
     {{- if $cat.ImagePath }}
-      image: {{ $catName }}_img,
+    img: {{ $catName }}_img,
     {{- end }}
   },
 {{- end }}
 }
 
-export const IngredientCatalog: Record<string, Ingredient> = {
+const ingredientCatalog: Record<string, Ingredient> = {
 {{- range $ingName, $ing := .Ingredients }}
   {{ $ingName }}: {
+    id: "{{ $ingName }}",
     name: {
     {{- range $k, $v := $ing.Name }}
       {{ $k }}: "{{ $v }}",
     {{- end }}
     },
     {{- if $ing.ImagePath }}
-      image: {{ $ingName }}_img,
+    img: {{ $ingName }}_img,
     {{- end }}
     categories: [
     {{- range $ing.Categories }}
@@ -89,6 +99,12 @@ export const IngredientCatalog: Record<string, Ingredient> = {
     {{- end }}
     ],
   },
-  {{- end }}
+{{- end }}
 }
+
+export const FoodDB = {
+  categories: categoryCatalog,
+  ingredients: ingredientCatalog,
+}
+export default FoodDB
 `
