@@ -1,0 +1,9 @@
+---
+name:
+  en: Tomato
+  fr: Tomate
+categories:
+- vegetables
+units:
+- g
+- each
