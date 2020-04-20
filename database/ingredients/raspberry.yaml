@@ -1,0 +1,9 @@
+---
+name:
+  en: Raspberry
+  fr: Framboise
+categories:
+- fruits
+units:
+- g
+- each

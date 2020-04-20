@@ -1,0 +1,9 @@
+---
+name:
+  en: Mango
+  fr: Mangue
+categories:
+- fruits
+units:
+- g
+- each

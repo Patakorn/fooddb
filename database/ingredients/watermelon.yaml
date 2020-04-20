@@ -1,0 +1,10 @@
+---
+name:
+  en: Watermelon
+  fr: Pastèque
+categories:
+- fruits
+units:
+- g
+- kg
+- each

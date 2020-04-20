@@ -1,0 +1,11 @@
+---
+name:
+  en: Milk
+  fr: Lait
+categories:
+- drinks
+- dairy
+units:
+- L
+- cL
+- mL

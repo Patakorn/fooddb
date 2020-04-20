@@ -1,1 +1,9 @@
-toto
+---
+name:
+  en: Apple
+  fr: Pomme
+categories:
+- fruits
+units:
+- each
+- g

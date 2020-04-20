@@ -1,0 +1,9 @@
+---
+name:
+  en: Pear
+  fr: Poire
+categories:
+- fruits
+units:
+- g
+- each

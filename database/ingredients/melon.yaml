@@ -1,0 +1,9 @@
+---
+name:
+  en: Melon
+  fr: Melon
+categories:
+- fruits
+units:
+- g
+- each
