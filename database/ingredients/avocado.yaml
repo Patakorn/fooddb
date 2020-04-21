@@ -1,0 +1,9 @@
+---
+name:
+  en: Avocado
+  fr: Avocat
+categories:
+- fruits
+units:
+- g
+- each

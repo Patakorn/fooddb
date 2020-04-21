@@ -1,0 +1,9 @@
+---
+name:
+  en: Cabbage
+  fr: Chou
+categories:
+- vegetables
+units:
+- g
+- each

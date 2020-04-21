@@ -1,0 +1,10 @@
+---
+name:
+  en: Carrot
+  fr: Carotte
+categories:
+- vegetables
+units:
+- g
+- kg
+- each

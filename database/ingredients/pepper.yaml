@@ -1,0 +1,9 @@
+---
+name:
+  en: Pepper
+  fr: Poivron
+categories:
+- vegetables
+units:
+- g
+- each

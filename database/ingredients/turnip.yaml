@@ -1,0 +1,9 @@
+---
+name:
+  en: Turnip
+  fr: Navet
+categories:
+- vegetables
+units:
+- g
+- each

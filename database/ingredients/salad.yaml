@@ -1,0 +1,9 @@
+---
+name:
+  en: Salad
+  fr: Salade
+categories:
+- vegetables
+units:
+- g
+- each
