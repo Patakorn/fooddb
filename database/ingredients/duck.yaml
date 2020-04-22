@@ -1,9 +1,9 @@
 ---
 name:
-  en: Squash
-  fr: Courge
+  en: Duck
+  fr: Canard
 categories:
-- vegetables
+- meat
 units:
 - g
 - kg

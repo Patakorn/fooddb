@@ -43,7 +43,7 @@ const TypeScriptTemplate string = `
 export const Languages = ["en", "fr"] as const
 export type Language = typeof Languages[number]
 
-export const Units = ["g", "Kg", "mL", "cL", "L", "each"] as const
+export const Units = ["g", "kg", "mL", "cL", "L", "each"] as const
 export type Unit = typeof Units[number]
 
 export type IngredientCategory = {

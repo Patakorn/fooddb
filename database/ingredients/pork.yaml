@@ -1,0 +1,10 @@
+---
+  name:
+    en: Pork
+    fr: Porc
+categories:
+- meat
+units:
+- g
+- kg
+- each

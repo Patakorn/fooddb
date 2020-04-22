@@ -1,0 +1,10 @@
+---
+name:
+  en: Sausage
+  fr: Saucisse
+categories:
+- meat
+units:
+- g
+- Kg
+- each
