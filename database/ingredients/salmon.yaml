@@ -1,0 +1,10 @@
+---
+name:
+  en: Salmon
+  fr: Saumon
+categories:
+- seafood
+units:
+- g
+- kg
+- each

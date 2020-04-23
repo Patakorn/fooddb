@@ -1,0 +1,10 @@
+---
+name:
+  en: Octopus
+  fr: Poulpe
+categories:
+- seafood
+units:
+- g
+- kg
+- each

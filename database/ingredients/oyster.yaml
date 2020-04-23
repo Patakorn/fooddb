@@ -1,0 +1,10 @@
+---
+name:
+  en: Oyster
+  fr: Huître
+categories:
+- seafood
+units:
+- g
+- kg
+- each

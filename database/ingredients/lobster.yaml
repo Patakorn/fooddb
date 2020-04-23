@@ -1,0 +1,10 @@
+---
+name:
+  en: Lobster
+  fr: Homard
+categories:
+- seafood
+units:
+- g
+- kg
+- each
