@@ -1,0 +1,10 @@
+---
+name:
+  en: Lemon
+  fr: Citron
+categories:
+- fruits
+units:
+- g
+- kg
+- each
